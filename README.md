@@ -100,15 +100,17 @@ This demonstrated domain-based authentication on the Windows client.
 
 ## User Provisioning with PowerShell
 
-PowerShell was used to automate the creation of multiple Active Directory user accounts rather than creating each account manually.
+An instructor-provided PowerShell script was used to automate the creation of multiple Active Directory user accounts rather than creating each account manually.
 
-The generated accounts were then verified in Active Directory Users and Computers.
+The script generates usernames and uses `New-ADUser` to provision the accounts in the `_EMPLOYEES` Organizational Unit.
+
+**PowerShell Script:** [Generate-Names-Create-Users.ps1](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
 <img width="1718" height="1360" alt="Snipaste_2024-05-18_22-32-17" src="https://github.com/user-attachments/assets/4b3e54f0-4e0a-4d4a-b9a7-2805877ea68a" />
 
-This demonstrated how scripting can reduce repetitive administrative work and improve consistency when provisioning users.
+The generated accounts were then verified in Active Directory Users and Computers.
 
-<br>
+This demonstrated how PowerShell can automate repetitive identity-management tasks and improve consistency when provisioning users.
 
 ## Challenges and Troubleshooting
 
