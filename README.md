@@ -30,7 +30,7 @@ The systems were configured on the same private network to support communication
 
 <img width="1616" height="1281" alt="Snipaste_2024-05-18_17-40-15" src="https://github.com/user-attachments/assets/858a0023-ea36-43ec-afac-2f072adbbef8" />
 
-<br>
+<br><br>
 
 ## Connectivity Verification
 
@@ -40,7 +40,7 @@ Initial ping attempts from Client-1 to DC-1 timed out. After the appropriate Win
 
 <img width="2772" height="1391" alt="Snipaste_2024-05-18_18-27-51" src="https://github.com/user-attachments/assets/9faebada-4a33-4504-bc3a-d9f13a5f38b2" />
 
-<br>
+<br><br>
 
 ## Active Directory Domain Services Deployment
 
@@ -52,7 +52,7 @@ After the AD DS role was installed, Server Manager provided the option to promot
 
 This established the foundation for centralized authentication and administration within the domain environment.
 
-<br>
+<br><br>
 
 ## Organizational Units, Users, and Groups
 
@@ -66,7 +66,7 @@ An administrative account was also assigned to the **Domain Admins** security gr
 
 <img width="1718" height="1391" alt="Snipaste_2024-05-18_21-01-05" src="https://github.com/user-attachments/assets/8ae87d29-0ffe-44ea-beeb-7a7bbf09f02f" />
 
-<br>
+<br><br>
 
 ## Client DNS and Domain Configuration
 
@@ -76,7 +76,7 @@ Client-1 was configured to use **10.0.0.4** as its DNS server so that it could l
 
 <img width="1678" height="1232" alt="Snipaste_2024-05-18_21-43-40" src="https://github.com/user-attachments/assets/1e743b4d-f3da-4ca6-b7b3-67d988853389" />
 
-<br>
+<br><br>
 
 ## Joining Client-1 to the Domain
 
@@ -86,7 +86,7 @@ The successful domain join was confirmed by Windows.
 
 <img width="298" height="149" alt="Snipaste_2024-05-18_21-54-44" src="https://github.com/user-attachments/assets/9f9049a3-4471-4186-8cb3-e14cf98b7e5a" />
 
-<br>
+<br><br>
 
 ## Domain Authentication
 
@@ -96,7 +96,7 @@ Domain credentials were used to connect to Client-1 through Remote Desktop.
 
 This demonstrated domain-based authentication on the Windows client.
 
-<br>
+<br><br>
 
 ## User Provisioning with PowerShell
 
@@ -111,6 +111,8 @@ The script generates usernames and uses `New-ADUser` to provision the accounts i
 The generated accounts were then verified in Active Directory Users and Computers.
 
 This demonstrated how PowerShell can automate repetitive identity-management tasks and improve consistency when provisioning users.
+
+<br>
 
 ## Challenges and Troubleshooting
 
